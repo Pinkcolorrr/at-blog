@@ -2,7 +2,7 @@
 
 import { ThemeProvider } from '@mui/material';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v13-appRouter';
-import theme from '@theme/theme';
+import theme from '@styles/theme';
 import { ReactNode } from 'react';
 
 export function Providers({

@@ -3,8 +3,9 @@ import { createTheme } from '@mui/material/styles';
 
 const theme = createTheme({
   cssVariables: true,
-  typography: {
-    fontFamily: 'var(--font-geist-sans)',
+  colorSchemes: {
+    dark: true,
+    light: true,
   },
   palette: {
     mode: 'dark',
@@ -12,7 +13,7 @@ const theme = createTheme({
       main: '#c026d3',
     },
     secondary: {
-      main: 'rgba(255,28,190,0.85)',
+      main: '#FF1CBED8',
     },
     background: {
       default: '#1A0024',

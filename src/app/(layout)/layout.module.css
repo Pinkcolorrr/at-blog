@@ -1,9 +1,7 @@
-.main {
-  padding: 16px;
+.toolbar {
+	justify-content: space-between;
 }
 
-.headerContent {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.main {
+
 }

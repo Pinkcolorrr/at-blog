@@ -1,7 +1,6 @@
-import '@theme/index.css';
+import '@styles/index.css';
 
-import { Box } from '@mui/material';
-import { geistMono, geistSans } from '@theme/fonts';
+import { geistMono, geistSans } from '@styles/fonts';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
@@ -20,16 +19,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <Providers>
-          <Box
-            sx={{
-              height: '100%',
-              bgcolor: 'background.default',
-            }}
-          >
-            {children}
-          </Box>
-        </Providers>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

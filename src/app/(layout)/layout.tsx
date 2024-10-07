@@ -1,5 +1,6 @@
-import { AppBar, Toolbar } from '@mui/material';
-import { Navigation } from '@ui/navigation';
+import { Navigation } from '@features/navigation';
+import { ThemeToggle } from '@features/theme-toggle';
+import { AppBar, Container, Toolbar } from '@mui/material';
 import { ReactNode } from 'react';
 
 import styles from './layout.module.css';
@@ -12,11 +13,14 @@ export default function AppLayout({
   return (
     <>
       <AppBar position={'relative'}>
-        <Toolbar>
+        <Toolbar className={styles.toolbar}>
           <Navigation />
+          <ThemeToggle />
         </Toolbar>
       </AppBar>
-      <main className={styles.main}>{children}</main>
+      <main className={styles.main}>
+        <Container>{children}</Container>
+      </main>
     </>
   );
 }
