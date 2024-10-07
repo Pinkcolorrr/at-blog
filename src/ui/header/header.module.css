@@ -1,0 +1,4 @@
+.header {
+  height: var(--header-heigh);
+  padding: 16px;
+}
