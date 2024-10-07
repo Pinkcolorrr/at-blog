@@ -19,5 +19,5 @@ export const NAV_LINKS: NavLink[] = [
   {
     title: 'contact',
     href: 'contact',
-  }
+  },
 ];

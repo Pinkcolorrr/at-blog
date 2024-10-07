@@ -1,4 +1,4 @@
-import { Header } from '@ui/header';
+import { AppBar, Toolbar } from '@mui/material';
 import { Navigation } from '@ui/navigation';
 import { ReactNode } from 'react';
 
@@ -11,12 +11,11 @@ export default function AppLayout({
 }>) {
   return (
     <>
-      <Header>
-        <div className={styles.headerContent}>
-          <div>logo</div>
+      <AppBar position={'relative'}>
+        <Toolbar>
           <Navigation />
-        </div>
-      </Header>
+        </Toolbar>
+      </AppBar>
       <main className={styles.main}>{children}</main>
     </>
   );

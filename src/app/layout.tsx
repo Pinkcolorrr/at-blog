@@ -1,8 +1,11 @@
 import '@theme/index.css';
 
+import { Box } from '@mui/material';
 import { geistMono, geistSans } from '@theme/fonts';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
+
+import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'AT-Blog',
@@ -17,7 +20,16 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {children}
+        <Providers>
+          <Box
+            sx={{
+              height: '100%',
+              bgcolor: 'background.default',
+            }}
+          >
+            {children}
+          </Box>
+        </Providers>
       </body>
     </html>
   );
