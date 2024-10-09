@@ -12,7 +12,7 @@ export function Providers({
 }>) {
   return (
     <AppRouterCacheProvider options={{ key: 'css', enableCssLayer: true }}>
-      <ThemeProvider theme={theme}>{children}</ThemeProvider>
+      <ThemeProvider disableTransitionOnChange theme={theme}>{children}</ThemeProvider>
     </AppRouterCacheProvider>
   );
 }

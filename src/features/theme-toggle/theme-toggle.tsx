@@ -1,4 +1,5 @@
 'use client';
+import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 import ComputerIcon from '@mui/icons-material/Computer';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 import LightModeIcon from '@mui/icons-material/LightMode';
@@ -21,10 +22,10 @@ export function ThemeToggle() {
       onChange={(_, v) => v && setMode(v)}
     >
       <ToggleButton value={'dark'} aria-label={'theme dark'}>
-        <DarkModeIcon />
+        { value === 'dark' ? <DarkModeIcon /> : <DarkModeOutlined/> }
       </ToggleButton>
       <ToggleButton value={'light'} aria-label={'theme light'}>
-        <LightModeIcon />
+        { value === 'light' ? <LightModeIcon /> : <LightModeOutlined/> }
       </ToggleButton>
       <ToggleButton value={'system'} aria-label={'theme system'}>
         <ComputerIcon />

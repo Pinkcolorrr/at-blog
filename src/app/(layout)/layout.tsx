@@ -12,11 +12,13 @@ export default function AppLayout({
 }>) {
   return (
     <>
-      <AppBar position={'relative'}>
-        <Toolbar className={styles.toolbar}>
-          <Navigation />
-          <ThemeToggle />
-        </Toolbar>
+      <AppBar color={'default'} position={'relative'}>
+        <Container>
+          <Toolbar className={styles.toolbar}>
+            <Navigation />
+            <ThemeToggle />
+          </Toolbar>
+        </Container>
       </AppBar>
       <main className={styles.main}>
         <Container>{children}</Container>
