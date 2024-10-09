@@ -12,16 +12,19 @@ export default function AppLayout({
 }>) {
   return (
     <>
-      <AppBar color={'default'} position={'relative'}>
+      <AppBar color={'default'} sx={{opacity: '98%'}}>
         <Container>
           <Toolbar className={styles.toolbar}>
-            <Navigation />
-            <ThemeToggle />
+            <div>logo</div>
+            <div className={styles.headerActions}>
+              <Navigation />
+              <ThemeToggle />
+            </div>
           </Toolbar>
         </Container>
       </AppBar>
-      <main className={styles.main}>
-        <Container>{children}</Container>
+      <main>
+        <Container sx={{ py: 10 }}>{children}</Container>
       </main>
     </>
   );
