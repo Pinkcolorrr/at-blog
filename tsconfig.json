@@ -21,7 +21,8 @@
       "@ui/*": ["./src/ui/*"],
       "@styles/*": ["./src/styles/*"],
       "@features/*": ["./src/features/*"],
-      "@public/*": ["./src/public/*"]
+      "@public/*": ["./src/public/*"],
+      "@prisma/*": ["./src/prisma/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
