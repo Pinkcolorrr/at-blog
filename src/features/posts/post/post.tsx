@@ -1,12 +1,13 @@
 import { Box, Card, Divider, Link, Typography } from '@mui/material';
+import { Post as PostProps } from '@prisma/client';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-export function Post() {
+export function Post(post: PostProps) {
   return (
     <Card sx={{ p: 4, borderRadius: 5, maxWidth: 400 }}>
       <Typography variant={'h3'} color='textSecondary'>
-        How JS Really work inside
+        {post.title}
       </Typography>
       <Divider sx={{ my: 2 }} />
       <Box sx={{ textAlign: 'center', mb: 4 }}>
@@ -17,13 +18,10 @@ export function Post() {
           height={300}
         />
       </Box>
-      <Typography noWrap>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea
-        error excepturi explicabo quia, recusandae rem voluptatibus voluptatum!
-        Commodi corporis eaque harum, labore quod rem rerum sapiente velit
-        voluptatibus. Fugit?
-      </Typography>
-      <Link component={NextLink} href={'#'}>Read</Link>
+      <Typography noWrap>{post.content}</Typography>
+      <Link component={NextLink} href={`./${post.id}`}>
+        Read
+      </Link>
     </Card>
   );
 }
