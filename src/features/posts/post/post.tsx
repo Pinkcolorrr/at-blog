@@ -19,7 +19,7 @@ export function Post(post: PostProps) {
         />
       </Box>
       <Typography noWrap>{post.content}</Typography>
-      <Link component={NextLink} href={`./${post.id}`}>
+      <Link component={NextLink} href={`/blog/${post.id}`}>
         Read
       </Link>
     </Card>

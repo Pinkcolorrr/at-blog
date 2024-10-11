@@ -2,7 +2,7 @@ import { PostsFeed } from '@features/posts/posts-feed/posts-feed';
 
 import styles from './blog.module.css';
 
-export default function Blog() {
+export default function Blogs() {
   return (
     <div className={styles.blogPage}>
       <PostsFeed />
