@@ -19,11 +19,12 @@
     ],
     "paths": {
       "@ui/*": ["./src/ui/*"],
+      "@api/*": ["./src/app/api/*"],
       "@styles/*": ["./src/styles/*"],
       "@features/*": ["./src/features/*"],
       "@public/*": ["./src/public/*"],
       "@prisma/*": ["./prisma/*"],
-      "@api/*": ["./src/api/*"]
+      "@auth/*": ["./src/auth/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

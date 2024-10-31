@@ -1,6 +1,8 @@
+import { AuthWidget } from '@auth/ui';
 import { Navigation } from '@features/navigation';
 import { ThemeToggle } from '@features/theme-toggle';
-import { AppBar, Container, Toolbar } from '@mui/material';
+import { AppBar, Container, Divider, Toolbar } from '@mui/material';
+import { HeaderActions } from '@ui/header-actions';
 import { ReactNode } from 'react';
 
 import styles from './layout.module.css';
@@ -12,13 +14,17 @@ export default function AppLayout({
 }>) {
   return (
     <>
-      <AppBar color={'default'} sx={{opacity: '98%'}}>
+      <AppBar color={'default'} sx={{ opacity: '98%' }}>
         <Container>
           <Toolbar className={styles.toolbar}>
             <div>logo</div>
             <div className={styles.headerActions}>
               <Navigation />
-              <ThemeToggle />
+              <HeaderActions>
+                <ThemeToggle />
+                <Divider sx={{ marginY: 2 }} />
+                <AuthWidget />
+              </HeaderActions>
             </div>
           </Toolbar>
         </Container>

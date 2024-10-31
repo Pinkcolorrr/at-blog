@@ -19,15 +19,28 @@ export function ThemeToggle() {
       exclusive
       size={'small'}
       aria-label='theme select'
+      sx={{ width: '100%' }}
       onChange={(_, v) => v && setMode(v)}
     >
-      <ToggleButton value={'dark'} aria-label={'theme dark'}>
-        { value === 'dark' ? <DarkModeIcon /> : <DarkModeOutlined/> }
+      <ToggleButton
+        sx={{ flexGrow: 1 }}
+        value={'dark'}
+        aria-label={'theme dark'}
+      >
+        {value === 'dark' ? <DarkModeIcon /> : <DarkModeOutlined />}
       </ToggleButton>
-      <ToggleButton value={'light'} aria-label={'theme light'}>
-        { value === 'light' ? <LightModeIcon /> : <LightModeOutlined/> }
+      <ToggleButton
+        sx={{ flexGrow: 1 }}
+        value={'light'}
+        aria-label={'theme light'}
+      >
+        {value === 'light' ? <LightModeIcon /> : <LightModeOutlined />}
       </ToggleButton>
-      <ToggleButton value={'system'} aria-label={'theme system'}>
+      <ToggleButton
+        sx={{ flexGrow: 1 }}
+        value={'system'}
+        aria-label={'theme system'}
+      >
         <ComputerIcon />
       </ToggleButton>
     </ToggleButtonGroup>
