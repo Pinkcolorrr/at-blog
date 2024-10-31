@@ -4,6 +4,8 @@ import { MoreVert } from '@mui/icons-material';
 import { Box, IconButton, Popover } from '@mui/material';
 import { MouseEvent, ReactNode, useState } from 'react';
 
+import styles from './header-actions.module.css';
+
 export function HeaderActions({ children }: { children: ReactNode }) {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -28,7 +30,7 @@ export function HeaderActions({ children }: { children: ReactNode }) {
           horizontal: 'left',
         }}
       >
-        <Box sx={{ padding: 2 }}>{children}</Box>
+        <Box className={styles.contentContainer}>{children}</Box>
       </Popover>
     </Box>
   );

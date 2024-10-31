@@ -12,7 +12,7 @@ function SearchButton() {
 export function PostsFilters() {
   return (
     <form>
-      <FormControl sx={{ width: '100%' }} variant='filled'>
+      <FormControl fullWidth variant='filled'>
         <OutlinedInput
           placeholder='search'
           aria-describedby='my-helper-text'

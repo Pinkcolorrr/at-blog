@@ -1,0 +1,3 @@
+.contentContainer {
+  padding: calc(2 * var(--mui-spacing));
+}

@@ -14,7 +14,7 @@ export default function AppLayout({
 }>) {
   return (
     <>
-      <AppBar color={'default'} sx={{ opacity: '98%' }}>
+      <AppBar color={'default'} className={styles.appBar}>
         <Container>
           <Toolbar className={styles.toolbar}>
             <div>logo</div>
@@ -22,7 +22,7 @@ export default function AppLayout({
               <Navigation />
               <HeaderActions>
                 <ThemeToggle />
-                <Divider sx={{ marginY: 2 }} />
+                <Divider className={styles.divider} />
                 <AuthWidget />
               </HeaderActions>
             </div>
@@ -30,7 +30,7 @@ export default function AppLayout({
         </Container>
       </AppBar>
       <main>
-        <Container sx={{ py: 10 }}>{children}</Container>
+        <Container className={styles.appContainer}>{children}</Container>
       </main>
     </>
   );

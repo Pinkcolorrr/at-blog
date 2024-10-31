@@ -5,6 +5,7 @@ import { geistMono, geistSans } from '@styles/fonts';
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 
+import styles from './latout.module.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
@@ -19,7 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} ${styles.body}`}
+      >
         <InitColorSchemeScript attribute='class' />
         <Providers>{children}</Providers>
       </body>

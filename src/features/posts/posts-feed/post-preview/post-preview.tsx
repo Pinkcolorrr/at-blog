@@ -3,17 +3,19 @@ import { Post as PostProps } from '@prisma/client';
 import Image from 'next/image';
 import NextLink from 'next/link';
 
-export function Post(post: PostProps) {
+import styles from './post-preview.module.css';
+
+export function PostPreview(post: PostProps) {
   return (
-    <Card sx={{ p: 4, borderRadius: 1, maxWidth: 400 }}>
+    <Card className={styles.post}>
       <Typography variant={'h3'} color='textSecondary'>
         {post.title}
       </Typography>
-      <Divider sx={{ my: 2 }} />
-      <Box sx={{ textAlign: 'center', mb: 4 }}>
+      <Divider className={styles.divider} />
+      <Box className={styles.imageContainer}>
         <Image
           src={'/images/hero-desktop.png'}
-          alt={'asd'}
+          alt={'icon'}
           width={400}
           height={300}
         />

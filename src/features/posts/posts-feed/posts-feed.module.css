@@ -1,0 +1,7 @@
+.filterContainer {
+  margin-bottom: calc(4 * var(--mui-spacing));
+}
+
+.feedContainer {
+  justify-content: center;
+}

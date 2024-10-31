@@ -10,7 +10,7 @@ export function AuthSelect() {
   return (
     <form action={doSocialSignIn} className={styles.form}>
       <Button
-        sx={{ color: 'var(--mui-palette-text-primary)' }}
+        className={styles.actionButton}
         size={'large'}
         startIcon={<GitHubIcon fontSize={'medium'} />}
         type='submit'
@@ -20,7 +20,7 @@ export function AuthSelect() {
         Sign in with Github
       </Button>
       <Button
-        sx={{ color: 'var(--mui-palette-text-primary)' }}
+        className={styles.actionButton}
         size={'large'}
         startIcon={<GoogleIcon fontSize={'medium'} />}
         type='submit'

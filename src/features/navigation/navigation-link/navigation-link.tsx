@@ -13,7 +13,6 @@ export function NavigationLink({ href, title }: NavLink) {
   return (
     <Button
       fullWidth
-      variant={'text'}
       className={isActive ? styles.active : ''}
       component={Link}
       href={href}
