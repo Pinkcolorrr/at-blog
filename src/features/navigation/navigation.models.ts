@@ -9,15 +9,11 @@ export const NAV_LINKS: NavLink[] = [
     href: '/home',
   },
   {
-    title: 'blog',
-    href: '/blog',
-  },
-  {
     title: 'about',
     href: '/about',
   },
   {
-    title: 'contact',
-    href: '/contact',
+    title: 'contacts',
+    href: '/contacts',
   },
 ];

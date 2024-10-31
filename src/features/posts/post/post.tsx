@@ -5,7 +5,7 @@ import NextLink from 'next/link';
 
 export function Post(post: PostProps) {
   return (
-    <Card sx={{ p: 4, borderRadius: 5, maxWidth: 400 }}>
+    <Card sx={{ p: 4, borderRadius: 1, maxWidth: 400 }}>
       <Typography variant={'h3'} color='textSecondary'>
         {post.title}
       </Typography>
