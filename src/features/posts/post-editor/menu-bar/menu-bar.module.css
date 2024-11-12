@@ -1,0 +1,4 @@
+.container {
+  display: flex;
+  gap: calc(2 * var(--mui-spacing));
+}

@@ -1,5 +1,6 @@
 import { AuthWidget } from '@auth/ui';
 import { Navigation } from '@features/navigation';
+import { PostEditLink } from '@features/posts';
 import { ThemeToggle } from '@features/theme-toggle';
 import { AppBar, Container, Divider, Toolbar } from '@mui/material';
 import { HeaderActions } from '@ui/header-actions';
@@ -20,6 +21,7 @@ export default function AppLayout({
             <div>logo</div>
             <div className={styles.headerActions}>
               <Navigation />
+              <PostEditLink />
               <HeaderActions>
                 <ThemeToggle />
                 <Divider className={styles.divider} />
@@ -29,7 +31,7 @@ export default function AppLayout({
           </Toolbar>
         </Container>
       </AppBar>
-      <main>
+      <main className={styles.main}>
         <Container className={styles.appContainer}>{children}</Container>
       </main>
     </>

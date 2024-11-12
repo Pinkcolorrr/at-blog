@@ -1,0 +1,26 @@
+.container {
+  padding: calc(2 * var(--mui-spacing));
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menuBarContainer {
+  margin: auto auto calc(2 * var(--mui-spacing));
+}
+
+.editorContent {
+  flex-grow: 1;
+  overflow-y: auto;
+}
+
+.tiptapRoot {
+  outline: none;
+  height: 100%;
+  padding: calc(5 * var(--mui-spacing)) calc(15 * var(--mui-spacing));
+  max-width: 965px;
+  margin: auto;
+}
+
+.tiptapFocus {
+}

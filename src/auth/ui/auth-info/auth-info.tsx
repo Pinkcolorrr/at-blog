@@ -4,8 +4,6 @@ import Image from 'next/image';
 import { Session } from 'next-auth';
 
 export function AuthInfo(session: Session) {
-  console.log(session);
-
   return (
     <div>
       {session.user?.name}

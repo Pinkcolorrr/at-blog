@@ -1,5 +1,6 @@
 .appContainer {
   padding: calc(10 * var(--mui-spacing)) 0;
+  height: 100%;
 }
 
 .toolbar {
@@ -19,4 +20,8 @@
 
 .divider {
   margin: calc(2 * var(--mui-spacing)) 0;
+}
+
+.main {
+  height: 100%;
 }
